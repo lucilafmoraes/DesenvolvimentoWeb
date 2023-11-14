@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 11</title>
+</head>
+<body>
+    <main>
+        <h1>PORTAL DO ALUNO</h1>
+        <hr>
+        <form action="processaDados.php">
+            <label for="name">Insira seu nome</label>
+            <input type="text" name="name" required>
+            <br><br>
+            <label for="nota1">Insira a nota 1</label>
+            <input type="number" name="nota1" min="0" max="10" step="0.1" required>
+            <br><br>
+            <label for="nota2">Insira a nota 1</label>
+            <input type="number" name="nota2" min="0" max="10" step="0.1" required>
+            <br><br>
+            <label for="aulas">Insira a quantidade de aulas</label>
+            <input type="number" name="aulas" value="144" readonly>
+            <br><br>
+            <label for="faltas">Insira a quantidade de faltas</label>
+            <input type="number" name="faltas" min="0" max="144" step="1" required>
+            <br>
+            <br>
+            <input type="submit" name="enviar" value="ENVIAR">
+        </form>
+
+    </main>
+</body>
+</html>

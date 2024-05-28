@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem de Vendedores</title>
+    <script src="./vendedor-serviceJs/listarFetch.js" type="module" defer></script>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h3 class="titulo">Lista de Vendedores</h3>
+        <hr/>
+        <div id="erro">
+            <span id="msgErro" class="msgErro"></span>
+            <span id="msgSucesso" class="msgSucesso"></span> 
+            <br>
+            <!--<button id="btnInserirVendedor">Inserir novo vendedor</button>-->
+        </div> 
+        
+        <!-- O dialog é nosso modal
+        <dialog id="modalVendedores" class="meuModalVendedores">
+            <div id="divFormModalVendedores">
+                <h4>Inserir/Alterar vendedor</h4>
+                <hr>
+                <form id="modalFormVendedor" action="#">
+                    
+                </form>
+                <hr>
+            </div>
+            <input type="button" id="btnFecharModalVendedor" value="Fechar">
+        </dialog>-->
+        <table border="1px" id="tblVendedor">
+        <thead>
+            <tr><th>ID</th><th>VENDEDOR</th><th>PERCENTUAL DE COMISSÃO</th></tr>
+        </thead>
+        <tbody>    
+            <!-- Aqui a tabela vai ser renderizada -->
+        </tbody>
+        </table>
+    </main>
+    <footer>
+        <hr/>
+        Todos os direitos reservados
+    </footer>
+</body>
+</html>

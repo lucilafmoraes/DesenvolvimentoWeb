@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem de Vendas</title>
+    <link rel="stylesheet" href="css/reset.css" /> 
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/estilo.css" /> 
+    <style>
+        datalist {
+  display: none;
+  outline: none;
+}
+    </style>
+    <script src="vendas-servicejs/listarFetch.js" type="module" defer></script>
+    <script src="vendas-servicejs/inserirAlterarFetch.js" type="module" defer></script>
+    <script src="vendas-servicejs/excluirBuscarFetch.js" type="module" defer></script>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h3 class="titulo">Lista de Vendas</h3>
+        <hr/>
+        <div id="erro">
+            <span id="msgErro" class="msgErro"></span> <!--Exibição em vermelho-->
+            <span id="msgSucesso" class="msgSucesso"></span> <!--Exibição em azul-->
+            <br>
+            <button id="btnInserirVenda">Inserir nova venda</button>
+        </div> 
+        
+        <!-- O dialog é nosso modal -->
+        <dialog id="modalDialog" class="meuModal">
+            <div id="divFormModal">
+                <h4>Inserir/Alterar venda</h4>
+                <hr>
+                <form id="modalForm" action="#">
+                    
+                </form>
+                <hr>
+            </div>
+            <input type="button" id="btnFecharModal" value="Fechar">
+        </dialog>
+        <table id="tblVendas">
+        <thead>
+            <tr><th>ID</th><th>CLIENTE</th><th>VALOR</th><th>QUADRIMESTRE</th><th>AÇÕES</th></tr>
+        </thead>
+        <tbody>    
+            <!-- Aqui a tabela vai ser renderizada -->
+        </tbody>
+        </table>
+    </main>
+    <footer>
+        <hr/>
+        Todos os direitos reservados
+    </footer>
+</body>
+</html>

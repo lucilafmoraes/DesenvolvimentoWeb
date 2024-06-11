@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listagem de Vendedores</title>
     <script src="./vendedor-serviceJs/listarFetch.js" type="module" defer></script>
+    <script src="./vendedor-serviceJs/inserirAlterarFetch.js" type="module" defer></script>
+    <script src="./vendedor-serviceJs/excluirBuscarFetch.js" type="module" defer></script>
 </head>
 <body>
     <nav>
@@ -20,11 +22,9 @@
             <span id="msgErro" class="msgErro"></span>
             <span id="msgSucesso" class="msgSucesso"></span> 
             <br>
-            <!--<button id="btnInserirVendedor">Inserir novo vendedor</button>-->
+            <button id="btnInserirVendedor">Inserir novo vendedor</button>
         </div> 
-        
-        <!-- O dialog é nosso modal
-        <dialog id="modalVendedores" class="meuModalVendedores">
+        <dialog id="modalVendedores" class="meuModal">
             <div id="divFormModalVendedores">
                 <h4>Inserir/Alterar vendedor</h4>
                 <hr>
@@ -34,10 +34,10 @@
                 <hr>
             </div>
             <input type="button" id="btnFecharModalVendedor" value="Fechar">
-        </dialog>-->
+        </dialog>
         <table border="1px" id="tblVendedor">
         <thead>
-            <tr><th>ID</th><th>VENDEDOR</th><th>PERCENTUAL DE COMISSÃO</th></tr>
+            <tr><th>ID</th><th>VENDEDOR</th><th>PERCENTUAL DE COMISSÃO</th><th>AÇÕES</th></tr>
         </thead>
         <tbody>    
             <!-- Aqui a tabela vai ser renderizada -->

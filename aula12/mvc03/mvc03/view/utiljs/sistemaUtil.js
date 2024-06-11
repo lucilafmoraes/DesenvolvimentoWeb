@@ -6,7 +6,7 @@ async function preencherHtml(recurso, elemento){
 }
 
 //Fechar ao clicar fora da área do modal
-/*const modal = document.querySelector(".meuModal");
+const modal = document.querySelector(".meuModal");
 modal.addEventListener('click',(e)=>{
     //pegando as posições do modal na tela
     const areaModal = modal.getBoundingClientRect();
@@ -20,7 +20,7 @@ modal.addEventListener('click',(e)=>{
     ){ 
         modal.close();
     }
-}); */
+});
 //Recebe um elemento do DOM e a mensagem
 function exibirMensagemDeErro(elemento,msg){
     elemento.textContent = msg;
